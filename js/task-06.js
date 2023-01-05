@@ -2,7 +2,7 @@ const inputValidation = document.querySelector("#validation-input")
 const inputLength = document.querySelector('input[data-length="6"]');
 
 inputLength.addEventListener("blur" ,() => {
-    if(inputLength.value.length >= 6){
+    if(inputLength.value.length >= inputLength.dataset.length){
         inputValidation.classList.remove("invalid");
         inputValidation.classList.add("valid");
     }else{

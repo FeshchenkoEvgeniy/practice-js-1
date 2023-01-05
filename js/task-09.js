@@ -4,7 +4,7 @@ const changeTextSpan = document.querySelector(".color")
 
 btnChangeColor.addEventListener("click", () => {
   bodyBackGroundColor.style.backgroundColor = getRandomHexColor();
-  changeTextSpan.textContent = getRandomHexColor();
+  changeTextSpan.textContent = bodyBackGroundColor.style.backgroundColor;
 });
 
 
